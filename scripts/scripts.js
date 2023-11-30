@@ -11,8 +11,8 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-let modelName = document.getElementById("model-text");
-let duration = document.getElementById("duration-text");
+let modelName = document.getElementById("model-text")
+let duration = document.getElementById("duration-text")
 
 
 
@@ -29,7 +29,7 @@ let duration = document.getElementById("duration-text");
 // INSERT YOUR CODE HERE
 
 function recalculate() {
-    let costLabel = document.getElementById("calculated-cost");
+    let costLabel = document.getElementById("calculated-cost")
 
     if (modelName == "Model XYZ") {
         totalCost = duration * 100;
@@ -55,7 +55,7 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 
-let modelButton = document.getElementById("model-button");
+let modelButton = document.getElementById("model-button")
 
 
 function changeModel() {
@@ -88,7 +88,7 @@ modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
-let durationButton = document.getElementById("duration-button");
+let durationButton = document.getElementById("duration-button")
 
 function changeDuration() {
     let durationText = document.getElementById("duration-text");
