@@ -31,9 +31,9 @@ let duration = document.getElementById("duration-text")
 function recalculate() {
     let costLabel = document.getElementById("calculated-cost")
     
-    if (modelName == "Model XYZ") {
+    if (modelName == "Model XYZ", duration !== null) {
         totalCost = parseInt(duration.innerHTML) * 100;
-    } else if (modelName == "Model CPRG") {
+    } else if (modelName == "Model CPRG", duration !== null) {
         totalCost = parseInt(duration.innerHTML) * 213;  // innerHTML to access changed duration value
         // totalCost = duration * 213;
     }
