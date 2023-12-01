@@ -35,7 +35,6 @@ function recalculate() {
         totalCost = parseInt(duration.innerHTML) * 100;
     } else if (modelName == "Model CPRG", duration !== null) {
         totalCost = parseInt(duration.innerHTML) * 213;  // innerHTML to access changed duration value
-        // totalCost = duration * 213;
     }
     costLabel.innerHTML = totalCost;
 
@@ -56,7 +55,7 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 
-let modelButton = document.getElementById("model-button"); 
+let modelButton = document.getElementById("model-button")
 
 
 function changeModel() {
@@ -89,7 +88,7 @@ modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
-let durationButton = document.getElementById("duration-button");
+let durationButton = document.getElementById("duration-button")
 
 function changeDuration() {
     let durationText = document.getElementById("duration-text")
@@ -99,4 +98,3 @@ function changeDuration() {
 }
 
 durationButton.addEventListener("click", changeDuration);
-
