@@ -34,7 +34,7 @@ function recalculate() {
     if (modelName == "Model XYZ") {
         totalCost = parseInt(duration.innerHTML) * 100;
     } else if (modelName == "Model CPRG") {
-        totalCost = parseInt(duration.innerHTML) * 213;
+        totalCost = parseInt(duration.innerHTML) * 213;  // innerHTML to access changed duration value
         // totalCost = duration * 213;
     }
     costLabel.innerHTML = totalCost;
