@@ -11,8 +11,8 @@ You are encouraged to use the provided naming convention for ease of review.
 
 // INSERT YOUR CODE HERE
 
-let modelName = document.getElementById("model-text")
-let duration = document.getElementById("duration-text")
+let modelName = document.getElementById("model-text");
+let duration = document.getElementById("duration-text");
 
 
 
@@ -37,7 +37,7 @@ function recalculate() {
         totalCost = parseInt(duration.innerHTML) * 213;  // innerHTML to access changed duration value
     }
     costLabel.innerHTML = totalCost;
-
+}
 
 
 
@@ -55,11 +55,11 @@ function recalculate() {
 
 // INSERT YOUR CODE HERE
 
-let modelButton = document.getElementById("model-button")
+let modelButton = document.getElementById("model-button");
 
 
 function changeModel() {
-    let modelText = document.getElementById("model-text")
+    let modelText = document.getElementById("model-text");
     if (modelName == "Model XYZ") {
         modelName = "Model CPRG";
         modelText.innerHTML = "Model CPRG";
@@ -88,10 +88,10 @@ modelButton.addEventListener("click", changeModel);
 
 // INSERT YOUR CODE HERE
 
-let durationButton = document.getElementById("duration-button")
+let durationButton = document.getElementById("duration-button");
 
 function changeDuration() {
-    let durationText = document.getElementById("duration-text")
+    let durationText = document.getElementById("duration-text");
     durationPrompt = prompt("Enter duration in days");
     durationText.innerHTML = durationPrompt;
     recalculate();
